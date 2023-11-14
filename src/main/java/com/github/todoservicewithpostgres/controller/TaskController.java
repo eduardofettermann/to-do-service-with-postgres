@@ -19,7 +19,7 @@ public class TaskController {
         return taskService.getAllTasks();
     }
 
-    @PostMapping("add/")
+    @PostMapping("add")
     public Task postTask(@RequestParam(value = "title", defaultValue = "title default") String title, @RequestParam(value = "done", defaultValue = "false") boolean done) {
         Task task = new Task();
         task.setTitle(title);
