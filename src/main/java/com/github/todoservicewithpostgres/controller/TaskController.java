@@ -27,7 +27,7 @@ public class TaskController {
         return taskService.postTask(task);
     }
 
-    @PutMapping("change/")
+    @PutMapping("change")
     public ResponseEntity<Task> putTask(
             @RequestParam(value = "id") Long id,
             @RequestParam(value = "newtitle") String newTitle,
